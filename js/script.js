@@ -78,8 +78,7 @@ $(window).scroll(function(){
     });
 
     $('.skill-fill').each(function(i){
-
-      var width  = [ 70, 40, 50, 60, 57 , 78 , 64, 88 ];
+      var width  = [ 70, 60, 50, 60, 57 , 68 , 34, 88 ];
 
       setTimeout(function () {
         $('.skill-fill').eq(i).css({
