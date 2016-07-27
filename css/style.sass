@@ -1,0 +1,41 @@
+@import "tools/skeleton"
+@import "tools/normalizes"
+@import "tools/bourbon/bourbon"
+@import "modules/header"
+@import "modules/hero-section"
+@import "modules/do"
+@import "modules/know"
+@import "modules/code"
+@import "modules/footer"
+@import "component"
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,700)
+
+body
+  background-color: #f7f7f7
+  color: white
+
+::-webkit-scrollbar
+    width: 0px
+    /* remove scrollbar space */
+    background: transparent
+    /* optional: just make scrollbar invisible */
+
+::-webkit-scrollbar-thumb
+    background: #FFF
+
+h1
+  font-size: 3em
+
+.home-wrap
+  display: flex
+  min-height: 100vh
+
+#header-container
+  width: inherit
+
+#content-container
+  width: 100%
+
+@media (max-width: 775px)
+  .home-wrap
+    flex-direction: column

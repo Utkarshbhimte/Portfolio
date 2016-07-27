@@ -1,0 +1,200 @@
+.home-wrap
+  header
+    width: 155px
+    height: 100%
+    background: #fff
+    padding: 30px 0
+    z-index: 9
+
+    .header-position
+      position :fixed
+      top: 30px
+      left: 0
+      bottom: 30px
+      width: 155px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+      a
+        color: #717171
+        text-decoration: none
+
+        &:hover, &:active
+          color: #000
+
+      .logo
+        +hide-text
+        width: 155px
+        background:
+          image: url(../images/logo-ub.svg)
+          repeat: no-repeat
+          position: center
+          size: contain
+          //color: pink
+        height: 80px
+        padding: 0
+        margin: 0
+
+    // Desktop Nav
+    .site-nav
+      ul
+        list-style: none
+        margin: 20px 0
+        padding: 0 20px 0 0
+        text-align: right
+
+      li
+        margin-bottom: 10px
+
+        &:last-child
+          margin-bottom: 0
+
+    .email-link
+      display: block
+      text-align: right
+      padding-right: 20px
+
+
+    // Mobile Toggle
+    .mobile-nav-toggle
+      display: none
+      width: 50px
+      height: 50px
+      //background: pink
+      margin-right: 30px
+      align-items: center
+      cursor: pointer
+
+      &:selection
+        background: transparent
+
+      &:-moz-selection
+        background: transparent
+
+      span,
+      span:before,
+      span:after
+        content: ""
+        display: block
+        height: 2px
+        width: 100%
+        background: #333
+        position: relative
+
+        transition: all 0.3s ease-in-out
+
+      span:before
+        top: 15px
+
+      span:after
+        top: -17px
+
+        &.is-open span
+          background: transparent
+
+        &.is-open span:before,
+        &.is-open span:after
+          transform-origin: center
+          transform: rotate(45deg)
+          top: 0
+
+        &.is-open span:before
+          transform: rotate(-45deg)
+
+  // Mobile Nav
+  .mobile-nav
+    display: none
+    position: absolute
+    width: 100%
+    background: white
+    padding: 30px 0 20px
+    transform: translateY(-100%)
+    transition: all 0.3s ease-in-out
+
+    a
+      color: #999
+
+      &:hover, &:active
+        color: #666
+
+
+    ul
+      list-style: none
+      margin: 0
+      padding: 0
+
+    li
+      text-align: center
+      margin-bottom: 10px
+
+      a
+        text-decoration: none
+        color: #000
+
+@media (max-width: 775px)
+  .home-wrap
+    header
+      width: auto
+      height: auto
+      padding: 0
+
+      .header-position
+        width: auto
+        position: relative
+        top: auto
+        bottom: auto
+        left: auto
+        flex-direction: row
+        align-items: center
+        h1.logo
+          width: 55px
+          margin-left: 10vw
+      .site-nav,
+      .email-link
+        display: none
+
+      .logo
+
+
+      .mobile-nav-toggle
+        display: none
+        width: 45px
+
+    .mobile-nav.is-open
+      display: none
+      transform: translateY(0%)
+
+    .birdbox
+      .boy
+        height: 110vh
+      .innovation
+        height: 100px
+        left: -10vw
+      .design
+        height: 100px
+        top: 20vh
+        left: 20vw
+      .code
+        height: 100px
+        top: 70vh
+        left:40vw
+        z-index: 10
+      .hack
+        height: 100px
+        top: 40vh
+        left: 5vw
+
+    .intro
+      min-height: 100vh
+      height: auto
+      .intro-right
+        padding: 5vh 0
+        left: 5vw
+        width: 90vw
+        p
+          font-size: 4vw
+  .contact-me
+    padding: 5vh!important
+    span
+      font-size: 7vw !important

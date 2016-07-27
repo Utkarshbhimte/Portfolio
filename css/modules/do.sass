@@ -1,0 +1,65 @@
+.intro
+  overflow: hidden
+  background-color: rgb(46, 49, 146)
+  color: white
+  padding: 0px
+  min-height: 71vh
+  display: block
+  .intro-left
+    margin-right: 0px
+    padding-top: 15vh
+    display: inline-block
+    min-height: 70vh
+    background: rgb(63, 169, 245)
+    position: relative
+    transform: translateX(-1000px)
+    z-index: 1
+    transition: all .6s ease
+    &.in-position
+      transform: translateX(0px)
+      bottom: 0
+      top: 0
+      min-width: 450px
+      width: 30vw
+      margin: 0px
+      background:
+        attachment: fixed
+        position: 280px 130px
+
+    .profile-pic
+      margin-left: 30px
+      height: 300px
+      width: 300px
+      border-radius: 50%
+      transition: all .6s ease
+      background:
+        image: url('../images/blue-guy.png')
+        color: rgb(22, 52, 94)
+        position: 80px 130px
+        repeat: no-repeat
+        size: contain
+
+      &.in-position
+      display: block
+      margin-left: auto
+      margin-right: auto
+      background:
+        attachment: fixed
+        position: 280px 130px
+
+  .intro-right
+    position: absolute
+    width: 70vw
+    left: 22vw
+    margin-left: 0px
+    display: inline-block
+    transition: all .6s ease
+    padding-top: 10vh
+
+    &.in-position
+      width: 43vw
+      left: 50vw
+
+    p
+      font-size: 1.2em
+      margin-bottom: 10px

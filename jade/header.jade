@@ -1,0 +1,20 @@
+mixin nav-content()
+  ul
+    li: a(href="##thingsIdo") Things I do
+    li: a(href="##thingsIknow") Things I know
+    li: a(href="##thingsIhavecoded") Things I have coded
+
+.mobile-nav
+  +nav-content()
+  
+
+header
+  .header-position
+    h1.logo Utkarsh Bhimte
+
+    nav.site-nav
+      +nav-content()
+      
+    a(href="mailto:utkarshbhimte95@gmail.com").email-link +utkarshbhimte      
+      
+    .mobile-nav-toggle: span
