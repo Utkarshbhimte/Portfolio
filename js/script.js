@@ -1,3 +1,16 @@
+var skillSet  = [
+  { "skill": 'HTML5', "measure":74},
+  { "skill": 'CSS3', "measure":85},
+  { "skill": 'JS', "measure":65},
+  { "skill": 'Angular', "measure":64},
+  { "skill": 'Bootstrap', "measure":67},
+  { "skill": 'Sass', "measure":75},
+  { "skill": 'Jade', "measure":81},
+  { "skill": 'Android', "measure":45},
+  { "skill": 'Jekyll', "measure":74},
+  { "skill": 'Gulp', "measure":50}];
+
+
 $(function() {
   // This will select everything with the class smoothScroll
   // This should prevent problems with carousel, scrollspy, etc...
@@ -13,6 +26,10 @@ $(function() {
       }
     }
   });
+    skillSet.forEach(function(el) {
+      $('.skill-lockup').append("<div class='skill'><div class='skill-back'><div class='skill-fill html'><h3>" + el.skill +"</h3></div></div></div>");
+    });
+
 });
 
 // Change the speed to whatever you want
@@ -78,11 +95,10 @@ $(window).scroll(function(){
     });
 
     $('.skill-fill').each(function(i){
-      var width  = [ 70, 60, 50, 60, 57 , 68 , 34, 88 ];
 
       setTimeout(function () {
         $('.skill-fill').eq(i).css({
-          'width' : width[i] + '%'
+          'width' : skillSet[i].measure + '%'
         });
       }, 100 * (i + 1));
 
@@ -95,7 +111,7 @@ $(window).scroll(function(){
     $('.learned').each(function(i){
 
       setTimeout(function () {
-        $(".learned").eq(i).animate({'opacity': '1'});
+        $(".learned").eq(i).animate({ 'opacity': '1'});
       }, 600 * i);
 
     });
