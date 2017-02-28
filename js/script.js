@@ -5,6 +5,7 @@ var skillSet  = [
   { "skill": 'ReactJS', "measure":79},
   { "skill": 'Angular', "measure":64},
   { "skill": 'PWA', "measure":67},
+  { "skill": 'UI/UX Design', "measure":84},
   { "skill": 'GulpJs', "measure":64},
   { "skill": 'ExpressJS', "measure":54},
   { "skill": 'JSON', "measure":71},
