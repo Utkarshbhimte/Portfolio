@@ -2,13 +2,19 @@ var skillSet  = [
   { "skill": 'HTML5', "measure":74},
   { "skill": 'CSS3', "measure":85},
   { "skill": 'JS', "measure":65},
+  { "skill": 'ReactJS', "measure":79},
   { "skill": 'Angular', "measure":64},
+  { "skill": 'PWA', "measure":67},
+  { "skill": 'GulpJs', "measure":64},
+  { "skill": 'ExpressJS', "measure":54},
+  { "skill": 'JSON', "measure":71},
   { "skill": 'Bootstrap', "measure":67},
   { "skill": 'Sass', "measure":75},
   { "skill": 'Jade', "measure":81},
   { "skill": 'Android', "measure":45},
   { "skill": 'Jekyll', "measure":74},
-  { "skill": 'Gulp', "measure":50}];
+  { "skill": 'NodeJS', "measure":70},
+  { "skill": 'Webpack', "measure":54};
 
 
 $(function() {
