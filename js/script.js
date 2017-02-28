@@ -16,7 +16,7 @@ var skillSet  = [
   { "skill": 'Android', "measure":45},
   { "skill": 'Jekyll', "measure":74},
   { "skill": 'NodeJS', "measure":70},
-  { "skill": 'Webpack', "measure":54};
+  { "skill": 'Webpack', "measure":54}];
 
 
 $(function() {
