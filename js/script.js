@@ -8,6 +8,7 @@ var skillSet  = [
   { "skill": 'UI/UX Design', "measure":84},
   { "skill": 'GulpJs', "measure":64},
   { "skill": 'ExpressJS', "measure":54},
+  { "skill": 'Python', "measure":75},
   { "skill": 'JSON', "measure":71},
   { "skill": 'Bootstrap', "measure":67},
   { "skill": 'Sass', "measure":75},
