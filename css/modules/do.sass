@@ -2,11 +2,12 @@
   overflow: hidden
   background-color: rgb(46, 49, 146)
   color: white
-  padding: 0px
+  padding: 0
   min-height: 71vh
-  display: block
+  display: flex
+  justify-content: space-between
   .intro-left
-    margin-right: 0px
+    margin-right: 0
     padding-top: 15vh
     display: inline-block
     min-height: 70vh
@@ -21,10 +22,11 @@
       top: 0
       min-width: 450px
       width: 30vw
-      margin: 0px
+      margin: 0
       background:
         attachment: fixed
         position: 280px 130px
+
 
     .profile-pic
       margin-left: 30px
@@ -48,14 +50,11 @@
         position: 280px 130px
 
   .intro-right
-    position: absolute
     width: 70vw
-    left: 22vw
-    margin-left: 0px
     display: inline-block
     transition: all .6s ease
-    padding-top: 5vh
-
+    padding: 5vh 5em
+    margin: 0 auto
     &.in-position
       width: 43vw
       left: 50vw
@@ -63,3 +62,19 @@
     p
       font-size: 1.2em
       margin-bottom: 10px
+@media (max-width: 1030px)
+  .intro-right.in-position
+    width: 37vw
+    padding: 2em 1em;
+
+@media (max-width: 1445px)
+  .intro-right.in-position
+    width: 48vw;
+    left: 35vw;
+    padding: 2em 1em;
+
+@media (max-width: 770px)
+  .intro-left
+    display: none !important
+  .intro-right, .intro-right.in-position
+    width: 100vw
